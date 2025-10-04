@@ -1,1 +1,0 @@
-# IshitaBadole.github.io
