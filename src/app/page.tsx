@@ -7,7 +7,7 @@ export default function Home() {
         <div className="flex flex-col gap-8 max-w-2xl">
           <div>
           <h1 className="text-4xl font-bold text-center sm:text-left">
-            Hi, I'm Ishita!
+            Hi, I&apos;m Ishita!
           </h1>
           </div>
           <p className="text-lg text-center sm:text-left max-w-md">
