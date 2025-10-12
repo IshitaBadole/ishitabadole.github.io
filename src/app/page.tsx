@@ -10,8 +10,12 @@ export default function Home() {
             Hi, I&apos;m Ishita!
           </h1>
           </div>
-          <p className="text-lg text-center sm:text-left max-w-md">
-            One day I <i>will</i> build this portfolio website. Until then, this will do..
+          <p className="text-lg text-center sm:text-left max-w-prose">
+            I'm slowly growing this cozy little space; part digital garden, part sketchbook, part
+            project log. It&apos;s where I gather the things I&apos;m thinking about, building, drawing, exploring, and figuring out along the way.
+          </p>
+          <p className="text-lg text-center sm:text-left max-w-prose">
+            No pressure to be polished here. Just a quiet, evolving corner of the internet.
           </p>
           <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
           <a
