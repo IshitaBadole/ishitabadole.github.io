@@ -24,3 +24,26 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@layer components {
+  .bg-homepage {
+    @apply relative z-0;
+  }
+
+  .bg-homepage::before {
+    content: '';
+    @apply absolute inset-0 w-full h-full bg-[url('/cats_bg.jpg')] bg-cover bg-right md:bg-bottom -z-10 opacity-75 dark:opacity-15;
+  }
+
+  @media (orientation: portrait) {
+    .bg-homepage::before {
+      background-position: bottom right;
+    }
+  }
+
+  @media (orientation: landscape) {
+    .bg-homepage::before {
+      background-position: center bottom;
+    }
+  }
+}

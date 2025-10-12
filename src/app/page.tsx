@@ -2,6 +2,7 @@ import Image from 'next/image';
 
 export default function Home() {
   return (
+    <div className="bg-homepage" aria-hidden="true">
     <div className="font-body grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
         <div className="flex flex-col gap-8 max-w-2xl">
@@ -36,6 +37,10 @@ export default function Home() {
         </footer>
         </div>
       </main>
+      <p className="fixed bottom-2 right-2 text-xs text-gray-500 z-50">
+        <a className="flex" href="https://www.freepik.com/free-vector/watercolor-international-cat-day-background_29018602.htm#fromView=search&page=3&position=35&uuid=06b07e5a-4c77-4ea4-95f7-e492dc6af156&query=cat+background">Image by pikisuperstar on Freepik</a>
+      </p>
+    </div>
     </div>
   );
 }
