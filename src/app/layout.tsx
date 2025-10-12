@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Script from "next/script";
-import { Cormorant_Garamond, Poppins } from "next/font/google";
+import { Cormorant_Garamond, IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
 
 const cormorantGaramond = Cormorant_Garamond({
@@ -8,8 +8,8 @@ const cormorantGaramond = Cormorant_Garamond({
   subsets: ["latin"],
 });
 
-const poppins = Poppins({
-  variable: "--font-poppins",
+const ibmPlexMono = IBM_Plex_Mono({
+  variable: "--font-ibm-plex-mono",
   subsets: ["latin"],
   weight: ["400", "700"],
 });
@@ -25,7 +25,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${cormorantGaramond.variable} ${poppins.variable} antialiased`}>
+    <html lang="en">
       <head>
       <Script 
         data-goatcounter="https://ishita.goatcounter.com/count"
@@ -35,7 +35,7 @@ export default function RootLayout({
       />
       </head>
       <body
-        className={`${cormorantGaramond.variable} ${poppins.variable} antialiased`}
+        className={`${cormorantGaramond.variable} ${ibmPlexMono.variable} antialiased`}
       >
         {children}
       </body>
