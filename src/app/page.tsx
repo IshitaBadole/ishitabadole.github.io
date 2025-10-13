@@ -5,7 +5,7 @@ export default function Home() {
     <div className="font-body grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
       <div
         aria-hidden="true"
-        className="inset-0 -z-10 bg-[url('/cats_bg.jpg')] bg-cover bg-[right_80%] md:bg-bottom dark:opacity-20 md:fixed"
+        className="fixed inset-0 -z-10 bg-[url('/cats_bg.jpg')] bg-cover bg-[right_80%] md:bg-bottom dark:opacity-20"
       ></div>
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
         <div className="flex flex-col gap-8 max-w-2xl">
